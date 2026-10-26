@@ -1,0 +1,38 @@
+/*To find the maximum and minimum numbers in given 4 numbers*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int n1,n2,n3,n4,min1,min2,max1,max2,max,min;
+printf("Enter n1,n2,n3,n4 values:");
+scanf("%d%d%d%d",&n1,&n2,&n3,&n4);
+ if(n1>n2)
+ {
+  max1=n1;
+  min1=n2;
+ }
+ else
+ {
+  max1=n2;
+  min1=n1;
+ } 
+ if(n3>n4)
+ {
+  max2=n3;
+  min2=n4;
+ } 
+ else
+ {
+  max2=n4;
+  min2=n3;
+ } 
+ if(max1>max2)
+  printf("Max=%d",max1); 
+ else
+  printf("Max=%d",max2);
+ if(min1>min2)
+  printf("\tMin=%d",min2);
+ else
+  printf("\tMin=%d",min1); 
+ return 0;
+}  
